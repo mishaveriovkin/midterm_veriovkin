@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<button (click)="changeTitle()">change title</button>
+
+<h2>users above 20</h2>
+<ul>
+  <li *NgFor="let user of users">
+    <p *NngIf="user.age>20">{{user.firstName}},{{user.lastName}} - age:user.age</p>
+
+  </li>
+</ul>
+
+
